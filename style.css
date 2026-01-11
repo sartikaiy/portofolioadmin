@@ -102,11 +102,21 @@ main {
 
 /* LABEL */
 .project-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
   font-size: 1.05rem;
   font-weight: 600;
-  margin: 30px 0 20px;
+  color: #374151;
+  margin: 40px 0 20px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+
+.label-divider {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, #d1d5db, transparent);
 }
 
 /* GRID */
@@ -160,9 +170,8 @@ footer {
 }
 
 /* DARK MODE */
-body.dark {
-  background: #0f172a;
-  color: #e5e7eb;
+body.dark .label-divider {
+  background: linear-gradient(to right, #334155, transparent);
 }
 
 body.dark nav,
