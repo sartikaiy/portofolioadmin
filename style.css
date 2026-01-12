@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-/* ===== BASE ===== */
+/* ================= BASE ================= */
 body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
   background: #f3f4f6;
@@ -13,7 +13,7 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* ===== NAV ===== */
+/* ================= NAV ================= */
 nav {
   background: #ffffff;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -51,9 +51,10 @@ nav {
   cursor: pointer;
 }
 
-/* ===== HERO ===== */
+/* ================= HERO ================= */
 .hero {
   padding: 80px 20px 60px;
+  background: #f3f4f6;
 }
 
 .hero-container {
@@ -81,7 +82,7 @@ nav {
   color: #6b7280;
 }
 
-/* ===== DIVIDER ===== */
+/* ================= DIVIDER ================= */
 .divider {
   border: none;
   height: 1px;
@@ -89,24 +90,24 @@ nav {
   margin: 40px 0;
 }
 
-/* ===== MAIN ===== */
+/* ================= MAIN ================= */
 main {
   max-width: 1100px;
   margin: auto;
 }
 
-/* ===== SECTION ===== */
-.section,
-.content {
+/* ================= SECTION (INI KUNCI) ================= */
+.content,
+.section {
   padding: 60px 20px;
-  background: transparent; /* penting */
+  background: #f3f4f6; /* ⬅️ DIPAKSA ADA */
 }
 
 .section.gray {
   background: #e5e7eb;
 }
 
-/* ===== HEADINGS ===== */
+/* ================= HEADINGS ================= */
 h1, h2, h3 {
   font-weight: 600;
 }
@@ -116,7 +117,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-/* ===== LABEL ===== */
+/* ================= LABEL ================= */
 .project-label {
   display: flex;
   align-items: center;
@@ -134,14 +135,14 @@ h2 {
   background: linear-gradient(to right, #9ca3af, transparent);
 }
 
-/* ===== GRID ===== */
+/* ================= GRID ================= */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
 }
 
-/* ===== CARD ===== */
+/* ================= CARD ================= */
 .card {
   background: #ffffff;
   border-radius: 16px;
@@ -159,7 +160,7 @@ details.card summary::-webkit-details-marker {
   display: none;
 }
 
-/* ===== SKILLS ===== */
+/* ================= SKILLS ================= */
 .skills {
   margin-top: 16px;
 }
@@ -184,12 +185,12 @@ details.card summary::-webkit-details-marker {
   background: linear-gradient(90deg, #2563eb, #3b82f6);
 }
 
-/* ===== CONTACT ===== */
+/* ================= CONTACT ================= */
 .contact-center {
   text-align: center;
 }
 
-/* ===== FOOTER ===== */
+/* ================= FOOTER ================= */
 footer {
   text-align: center;
   padding: 20px;
@@ -198,7 +199,7 @@ footer {
   color: #6b7280;
 }
 
-/* ===== WHATSAPP ===== */
+/* ================= WHATSAPP ================= */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -209,12 +210,12 @@ footer {
   border-radius: 50%;
 }
 
-/* ========================= */
-/* ===== DARK MODE ===== */
-/* ========================= */
+/* ================================================= */
+/* ================= DARK MODE ===================== */
+/* ================================================= */
 
 body.dark {
-  background: #0f172a;
+  background: #020617;
   color: #e5e7eb;
 }
 
@@ -229,18 +230,10 @@ body.dark a {
   color: #e5e7eb;
 }
 
-/* NAV + FOOTER */
-body.dark nav,
-body.dark footer {
-  background: #020617;
-}
-
-/* ABOUT SECTION (INI FIX UTAMA) */
-body.dark .content {
-  background: #020617;
-}
-
-/* PROJECT SECTION */
+/* SEMUA SECTION GELAP (INI FIX UTAMA) */
+body.dark .hero,
+body.dark .content,
+body.dark .section,
 body.dark .section.gray {
   background: #020617;
 }
@@ -251,12 +244,18 @@ body.dark .card {
   box-shadow: none;
 }
 
+/* NAV & FOOTER */
+body.dark nav,
+body.dark footer {
+  background: #020617;
+}
+
 /* DIVIDER */
 body.dark .divider {
   background: linear-gradient(to right, transparent, #334155, transparent);
 }
 
-/* LABEL */
+/* LABEL LINE */
 body.dark .label-divider {
   background: linear-gradient(to right, #475569, transparent);
 }
@@ -266,7 +265,7 @@ body.dark .bar {
   background: #1e293b;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 640px) {
   .hero-container {
     flex-direction: column;
