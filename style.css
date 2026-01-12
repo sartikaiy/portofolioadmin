@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
-  background: #f9fafb;
+  background: #f3f4f6;
   color: #1f2937;
   line-height: 1.6;
   transition: background 0.3s, color 0.3s;
@@ -97,7 +97,7 @@ main {
 }
 
 .section.gray {
-  background: #f3f4f6;
+  background: #e5e7eb;
 }
 
 /* LABEL */
@@ -107,8 +107,7 @@ main {
   gap: 16px;
   font-size: 1.05rem;
   font-weight: 600;
-  color: #374151;
-  margin: 40px 0 20px;
+  margin: 30px 0 20px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -116,7 +115,7 @@ main {
 .label-divider {
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, #d1d5db, transparent);
+  background: linear-gradient(to right, #9ca3af, transparent);
 }
 
 /* GRID */
@@ -131,7 +130,7 @@ main {
   background: #ffffff;
   border-radius: 16px;
   padding: 24px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
 }
 
 /* SKILLS */
@@ -156,6 +155,8 @@ main {
 footer {
   text-align: center;
   padding: 20px;
+  background: #ffffff;
+  font-size: 0.9rem;
 }
 
 /* WHATSAPP */
@@ -164,25 +165,42 @@ footer {
   bottom: 20px;
   right: 20px;
   background: #25d366;
-  color: #fff;
+  color: #ffffff;
   padding: 14px 16px;
   border-radius: 50%;
 }
 
-/* DARK MODE */
-body.dark .label-divider {
-  background: linear-gradient(to right, #334155, transparent);
+/* ===== DARK MODE ===== */
+
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
 }
 
 body.dark nav,
 body.dark footer,
 body.dark .card,
-body.dark .section.gray {
+body.dark .section.gray,
+body.dark .content {
   background: #020617;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark span,
+body.dark summary,
+body.dark a {
+  color: #e5e7eb;
 }
 
 body.dark .divider {
   background: linear-gradient(to right, transparent, #334155, transparent);
+}
+
+body.dark .label-divider {
+  background: linear-gradient(to right, #475569, transparent);
 }
 
 body.dark .bar {
